@@ -11,6 +11,7 @@
 <body>
    <main>
     <div>
+        <div id="liveAlertPlaceholder" style="padding-top: 1%;"></div>
         <h1 id="cadastro">Cadastro</h1>
         <p>Para se cadastrar em nosso site, informe os dados abaixo:</p>
     </div>
@@ -25,7 +26,7 @@
         </p>
         <div id="endereco">
             <label for="endereco.cep">CEP:</label>  <input type="text" name="endereco.cep" class="classInputSmall">
-            <input type="button" value="Buscar" class="btn btn-outline-light btn-sm"><br>
+            <input type="button" value="Buscar" class="btn btn-outline-light btn-sm" onclick="buscarCep()"><br>
             <label for="endereco.logradouro">Logradouro:</label>  <input type="text" name="endereco.logradouro"class="classInputSmall">
             <label for="endereco.numero">N°:</label>  <input type="text" name="endereco.numero" class="classInputSmall"> <br>
             <label for="endereco.bairro">Bairro:</label> <input type="text" name="endereco.bairro" class="classInputSmall">
